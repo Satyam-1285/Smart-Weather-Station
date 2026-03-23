@@ -1,0 +1,37 @@
+# IoT Smart Weather Station (ESP32 + BME280)
+
+An end-to-end Electronics and Communication Engineering project that monitors environmental data and streams it to a web dashboard.
+
+## 🚀 Overview
+This project uses an **ESP32** microcontroller and a **BME280** sensor to measure temperature, humidity, and pressure. Data is transmitted via MQTT to a Node-RED dashboard for real-time visualization.
+
+## 🛠️ Hardware Components
+- ESP32 Development Board
+- BME280 Sensor (I2C)
+- Jumper Wires & Breadboard
+- USB-C Cable
+
+## 💻 Tech Stack
+- **Language:** C++ (Arduino IDE)
+- **Protocol:** MQTT
+- **Dashboard:** Node-RED / Adafruit IO
+- **Libraries:** Adafruit_BME280, PubSubClient
+
+## 🔌 Circuit Diagram
+
+| ESP32 Pin | BME280 Pin |
+|-----------|------------|
+| 3.3V      | VCC        |
+| GND       | GND        |
+| GPIO 21   | SDA        |
+| GPIO 22   | SCL        |
+
+## 📈 Key Features
+- [x] Real-time sensor data streaming.
+- [x] Deep Sleep mode for power efficiency.
+- [x] Over-the-Air (OTA) updates.
+
+## 📂 Project Structure
+- `/src`: Main firmware code.
+- `/schematics`: Wiring diagrams.
+- `/docs`: Project report and sensor datasheets.
